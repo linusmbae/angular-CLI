@@ -1,13 +1,7 @@
-<style media="screen">
-.btn{
-  background-color: red;
-  color: white;
-}
-</style>
 <p>
   {{goal.description}}
 </p>
 <p>
   This goal will be complete in {{goal.completeDate|dateCount}} days
 </p>
-<button class="btn" (click)='goalComplete(true)'>Complete</button>
+<button class="btn btn-outline-danger" (click)='goalDelete(true)'>Delete Goal</button>
